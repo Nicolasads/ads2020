@@ -1,15 +1,41 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
 }
 
-ul .navbar-nav-login{
-    float: right;
+.navbar {
+  padding: 20px 0;
 }
 
-li .nav-item .login{
-    display: flex;
+.navbar-brand {
+  text-transform: uppercase;
+  font-size: 1.7em;
+  color: #262626;
+  font-weight: 700;
 }
 
-a .nav-link-login{
+.nav-item {
+  font-weight: 600;
+  color: #252525;
+  font-size: 1.1em;
+}
 
+.nav-link:hover {
+  color: #0ec58e !important;
+  transition: 0.3s;
+}
+
+.btn-custom {
+  background-color: #00dd9b;
+  border-radius: 16px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  width: 4.5rem;
+}
+
+.btn-custom:hover {
+  background-color: #009b6c;
+  transition: 0.3s;
+  color: #fff;
 }
