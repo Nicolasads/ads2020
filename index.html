@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -15,7 +15,7 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" type="text/css" />
 
     <title>Confecções Caruaru</title>
   </head>
@@ -23,7 +23,7 @@
     <header>
       <div class="container-fluid">
         <nav class="navbar navbar-light navbar-expand-lg px-4">
-          <a href="#" class="navbar-brand mb-1 h1">Confecções Caruaru</a>
+          <a href="index.html" class="navbar-brand mb-1 h1">Confecções Caruaru</a>
 
           <button
             type="button"
@@ -36,24 +36,207 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbar-toggle">
-            <ul class="navbar-nav">
-              <li class="nav-item px-2">
-                <a href="#" class="nav-link">Inicio</a>
-              </li>
-              <li class="nav-item px-2">
-                <a href="#" class="nav-link">Empresas</a>
-              </li>
-            </ul>
             <ul class="navbar-nav ml-auto">
-              <a class="btn btn-custom" href="#teste" role="button">Login</a>
+              <button type="button" class="btn btn-custom rounded-pill" data-toggle="modal" data-target="#exampleModalLong">
+                Login
+              </button>
+              <button type="button" class="btn btn-custom2 rounded-pill" data-toggle="modal" data-target="#modalCadastro">
+                Cadastre-se
+              </button>
             </ul>
           </div>
         </nav>
       </div>
     </header>
 
+    <div class="landig">
+      <div class="home-wrap">
+        <div class="home-inner">
+          
+        </div>
+      </div>
+    </div>
+
+    <!-------- MODAL LOGIN ------------>
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <button type="button" class="close mt-3 mr-3 ml-auto" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="modal-body">
+            <form class="login-form text-center">
+              <h1 class="mb-5">Olá, Bem-vindo!</h1>
+      
+              <div class="from-group">
+                <input type="text" class="form-control rounded-pill" placeholder="Usuário">
+              </div>
+              <div class="from-group">
+                <input type="password" class="form-control rounded-pill" placeholder="Senha">
+              </div>
+      
+              <div class="forgot-link d-flex align-items-center justify-content-between">
+                <div class="form-check">
+                  <input type="checkbox" id="remember" class="form-check-input">
+                  <label for="remember">Lembrar senha</label>
+                </div>
+                <a href="#">Esqueceu sua senha?</a>
+              </div>
+      
+              <button type="submit" class="btn btn-login btn-custom btn-block btn-lg rounded-pill text-uppercase">Entrar</button>
+              <p class="mt-2">Não tem conta?<a data-toggle="modal" data-target="#modalCadastro" data-dismiss="modal">
+              <strong> Cadastre-se</strong></a></p>
+            </form> 
+          </div>
+            
+        </div>
+      </div>
+    </div>
+
+    <!--MODAL CADASTRO-->
+
+    <div class="modal fade" id="modalCadastro" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <button type="button" class="close mt-3 mr-3 ml-auto" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="modal-body">
+              <form class="login-form text-center">
+                <h1 class="mb-5 font-weight-light text-uppercase">Crie sua conta</h1>
+        
+                <div class="from-group">
+                  <input type="text" class="form-control rounded-pill" placeholder="Nome">
+                </div>
+                <div class="from-group">
+                  <input type="text" class="form-control rounded-pill" placeholder="Usuário">
+                </div>
+                <div class="from-group">
+                  <input type="password" class="form-control rounded-pill" placeholder="Senha">
+                </div>
+        
+                <button type="submit" class="btn mt-4 btn-custom btn-block btn-lg rounded-pill text-uppercase">Criar conta</button>
+              </form>
+              <p class="link-login mt-2 text-center">Já tem conta?<a data-toggle="modal" data-target="#exampleModalLong" data-dismiss="modal">
+                <strong> Faça o login</strong></a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-----------------PÁGINA INICIAL--------------------------->
+    <div class="caption text-center">
+      <h1>Bem vindo ao Confecções Caruaru</h1>
+      <h3>Aqui você encontra as melhores empresas textil de Caruaru</h3>
+      <a data-toggle="modal" data-target="#exampleModalLong" data-dismiss="modal" class="btn btn-outline-light btn-lg" role="button">Comece já</a>
+    </div>
+
+    <div class="jumbotron">
+      <div class="narrow text-center">
+
+        <div class="col-12">
+          <h3 class="heading">Recursos</h1>
+          <div class="heading-underline"></div>
+        </div>
+
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="img/tecido.jpg" width="18rem" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Catálogo</h5>
+              <p class="card-text">Fazendo seu login, você poderá ver catálogos de tecidos através do
+                seu celular ou computador
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img-top" src="img/tecido2.jpg" width="18rem" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Empresas</h5>
+              <p class="card-text">Você também poderá ver quais empresas estão disponíveis no site</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img-top img3" src="img/imagem3.png" height="290px" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Acesse em Qualquer plataforma</h5>
+              <p class="card-text">O site é totalmente responsivo, ele se adaptará em qualquer tipo de tamanho</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      
+    </div>
+
+    <div id="site" class="offset">
+
+      <div class="fixed-background">
+        <div class="row img">
+
+          <div class="row dark  text-center">
+          <div class="col-12">
+            <h3 class="heading">Como o site foi desenvolvido</h3>
+            <div class="heading-underline"></div>
+          </div>
+
+          <div class="col-md-4">
+            <h3 class="fixed-background">HTML5</h3>
+            <div class="feature">
+              <i class="fab fa-html5 fa-5x"></i>
+            </div>
+            <p>Foi utilizado o HTML5</p>
+          </div>
+
+          <div class="col-md-4">
+            <h3 class="fixed-background">BOOTSTRAP</h3>
+            <div class="feature">
+              <i class="fab fa-bootstrap fa-5x"></i>
+            </div>
+            <p>Bootstrap para estilização do front-end</p>
+          </div>
+
+          <div class="col-md-4">
+            <h3 class="fixed-background">PHP</h3>
+            <div class="feature">
+              <i class="fab fa-php fa-5x"></i>
+            </div>
+            <p>PHP para gerenciamento de dados</p>
+          </div> 
+        </div>
+
+        </div>
+        
+      </div>
+    </div>
+    
+    <footer>
+      <div class="row justify-content-center">
+        <div class="col-md-5 text-center">
+          <img src="./img/logo-temp.png" width="150px" alt="logo">
+          <p>Este site é apenas um projeto, utilizamos várias ferramentas para construção como foi mencionado
+            acima.
+          </p>
+          <strong>Alunos:</strong><br>
+          <p>Nicolas Alexsander</p>
+          <strong>Design criado por: Nicolas Alexsander</strong><br>
+          <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        </div>
+
+        <hr class="socket">
+        &copy; Caruaru Confecções.  
+      </div>
+    </footer>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://kit.fontawesome.com/c4cf45b7a7.js" crossorigin="anonymous"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
