@@ -1,0 +1,90 @@
+{
+    "empresa": [
+      {
+        "id": 1,
+        "name": "Avil",
+        "image": "https://www.tecidoscaldeira.com.br/image/cache/catalog/Colecao-chevron/Luiza/tecido-estampado-chevron-luiza-cinza-1000x1000-product_popup.jpg",
+        "title": "Tecido",
+        "type": "Jeans",
+        "imgprod": "https://m.media-amazon.com/images/I/61-wz0UOqFL._AC_UL320_ML3_.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Empresa 2",
+        "image": "https://www.tecidoscaldeira.com.br/image/cache/catalog/Colecao-chevron/Luiza/tecido-estampado-chevron-luiza-cinza-1000x1000-product_popup.jpg",
+        "title": "Tecido",
+        "type": "Jeans",
+        "imgprod": "https://m.media-amazon.com/images/I/61-wz0UOqFL._AC_UL320_ML3_.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Empresa 3",
+        "image": "https://www.tecidoscaldeira.com.br/image/cache/catalog/Colecao-chevron/Luiza/tecido-estampado-chevron-luiza-cinza-1000x1000-product_popup.jpg",
+        "title": "Tecido",
+        "type": "Jeans",
+        "imgprod": "https://m.media-amazon.com/images/I/61-wz0UOqFL._AC_UL320_ML3_.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Empresa 4",
+        "image": "https://www.tecidoscaldeira.com.br/image/cache/catalog/Colecao-chevron/Luiza/tecido-estampado-chevron-luiza-cinza-1000x1000-product_popup.jpg",
+        "title": "Tecido",
+        "type": "Jeans",
+        "imgprod": "https://m.media-amazon.com/images/I/61-wz0UOqFL._AC_UL320_ML3_.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Empresa 5",
+        "image": "https://www.tecidoscaldeira.com.br/image/cache/catalog/Colecao-chevron/Luiza/tecido-estampado-chevron-luiza-cinza-1000x1000-product_popup.jpg",
+        "title": "Tecido",
+        "type": "Jeans",
+        "imgprod": "https://m.media-amazon.com/images/I/61-wz0UOqFL._AC_UL320_ML3_.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Empresa 6",
+        "image": "https://www.tecidoscaldeira.com.br/image/cache/catalog/Colecao-chevron/Luiza/tecido-estampado-chevron-luiza-cinza-1000x1000-product_popup.jpg",
+        "title": "Tecido",
+        "type": "Jeans",
+        "imgprod": "https://m.media-amazon.com/images/I/61-wz0UOqFL._AC_UL320_ML3_.jpg"
+      }
+    ],
+    "produtos": [
+      {
+        "id": 1,
+        "title": "Tecido",
+        "tipo": "Jeans",
+        "image_prod": "https://m.media-amazon.com/images/I/61-wz0UOqFL._AC_UL320_ML3_.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Tecido",
+        "tipo": "Jeans",
+        "image": "https://m.media-amazon.com/images/I/51gCZ+oYUDL._AC_UL205_ML3_.jpg"
+      },
+      {
+        "id": 3,
+        "title": "Tecido",
+        "type": "Jeans",
+        "image": "https://m.media-amazon.com/images/I/81mxun+6pEL._AC_UL205_ML3_.jpg"
+      },
+      {
+        "id": 5,
+        "title": "Tecido",
+        "type": "Jeans",
+        "image": "https://m.media-amazon.com/images/I/61-wz0UOqFL._AC_UL320_ML3_.jpg"
+      },
+      {
+        "id": 6,
+        "title": "Tecido",
+        "type": "Jeans",
+        "image": "https://m.media-amazon.com/images/I/715RBdgZtHL._AC_UY218_ML3_.jpg"
+      },
+      {
+        "id": 4,
+        "title": "Tecido",
+        "type": "Jeans",
+        "image": "https://m.media-amazon.com/images/I/61q71cXyWeL._AC_UY218_ML3_.jpg"
+      }
+    ]
+  }

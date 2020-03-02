@@ -1,18 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 body {
-    font-family: "Lato", sans-serif;
+    font-family: 'Lato', sans-serif;
     overflow-x: hidden;
   }
   
   .navbar {
     padding: 20px 0;
     letter-spacing: 0.5px;
-  }
+  } 
   
+  .navbar-title i {
+    padding-right: 12px;
+    color: #015ce6;
+  }
+
   .navbar-brand {
     text-transform: uppercase;
-    font-size: 1.4em;
+    font-size: 1.5em;
     color: #262626;
-    font-weight: 700;
+    letter-spacing: 3px;
+    font-family: 'Fredoka One', sans-serif;
+    font-weight: 600;
   }
   
   .nav-item {
@@ -26,12 +36,12 @@ body {
     transition: 0.3s;
   }
 
-  .dropdown-toggle {
+  .dropdown {
     font-weight: 600;
     color: #666;
   }
   
-  .dropdown-toggle:hover {
+  .dropdown:hover {
     color: #b02db4;
   }
   
@@ -52,12 +62,6 @@ body {
 .heading {
     margin-left: 40px;
     font-size: 22px;
-}
-
-.card {
-    border-radius: 14px;
-    margin-top: 20px;
-    margin-left: 50px;
 }
 
 .form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {

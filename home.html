@@ -15,15 +15,21 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/home.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
-    <title>Confecções Caruaru - Home</title>
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/app.css">
+
+    <title>Localizaê - Home</title>
   </head>
   <body>
     <header>
       <div class="container-fluid">
         <nav class="navbar navbar-light navbar-expand-lg px-4">
-          <a href="home.html" class="navbar-brand mb-1 h1">Confecções Caruaru</a>
+          <div class="navbar-title">
+            <i class="fas fa-map-marker-alt fa-2x"></i><a href="home.html" class="navbar-brand mb-1 h1">Localizaê</a>
+          </div>
+          
 
           <button
             type="button"
@@ -44,8 +50,10 @@
                     <a class="nav-link" href="#team">Empresas</a>
                   </li>
                   <div class="dropdown">
-                    <button class="btn dropdown-toggle mr-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn dropdown mr-2" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                    data-hover="dropdown">
                       Olá, Usuário
+                      <i class="fas fa-chevron-down ml-1"></i>
                     </button>
                     <div class="dropdown-menu">
                       <a class="dropdown-item" href="#">Minha Conta</a>
@@ -79,44 +87,28 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-12">
-            <h3 class="heading">Recomendamos para você</h3>
-        </div>
-
-        <div class="card mr-2" style="width: 12rem;">
-            <img class="card-img-top" src="img/teste1.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Exemplo 1</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          <div class="card mr-2" style="width: 12rem;">
-            <img class="card-img-top" src="img/teste1.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Exemplo 2</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          <div class="card mr-2" style="width: 12rem;">
-            <img class="card-img-top" src="img/teste1.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Exemplo 3</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          <div class="card mr-4" style="width: 12rem;">
-            <img class="card-img-top" src="img/teste1.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Exemplo 4</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
+    <div class="slick-slider" id="empresabox">
+      <p class="card-text">${empresas.type}</p>
     </div>
+
+    <script src="navbar.html">
+    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="app.js"></script> 
+      <script type="text/javascript">
+         $(function(){
+            $('.card-deck').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3
+            });
+         });
+      </script>
+
     <script src="https://kit.fontawesome.com/c4cf45b7a7.js" crossorigin="anonymous"></script>
+
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -132,5 +124,6 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   </body>
 </html>
