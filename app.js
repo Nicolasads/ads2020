@@ -7,7 +7,8 @@ const fetchEmpresa = () => {
     for(let i = 1; i <= 6; i++){    
         const url = `https://my-json-server.typicode.com/Nicolasads/api/empresa/${i}` ;
         promises.push(fetch(url).then((res) => res.json()));
-    }    
+    }  
+    
 
         Promise.all(promises).then((results) => {
             const empresa = results.map((data) => ({
@@ -25,8 +26,8 @@ const displayEmpresa = (empresa) => {
     console.log(empresa);
     const empresaHTMLString = empresa.map (empresas => `
 
-    <div class="carousel slide" data-ride="carousel">
-        <div class="card-deck mr-1">
+    <div class="container">
+        <div class="card-deck">
             <div class="card">
                     <img class="card-img-top" src="${empresas.image}"/>
                 <div class="card-body">
@@ -36,7 +37,6 @@ const displayEmpresa = (empresa) => {
             </div>
         </div>
     </div>
-
     `)
     empresabox.innerHTML = empresaHTMLString;
 };

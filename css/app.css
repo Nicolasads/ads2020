@@ -6,7 +6,7 @@ body{
 .card {
     list-style: none;
     padding: 40px;
-    background-color: white;
+    background-color: #fff;
     color: #222;
     border-radius: 12px;
 }
@@ -14,9 +14,6 @@ body{
 #empresabox {
     width: 10rem;
     display: grid;
-    grid-gap: 20px;
-    display: inline-flex;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 20px;
 }
 
@@ -31,4 +28,9 @@ body{
 
 .card-text {
     text-align: center;
+}
+
+.d-flex {
+    margin-left: 10px;
+    height: 40px;
 }
